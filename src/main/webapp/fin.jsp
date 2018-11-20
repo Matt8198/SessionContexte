@@ -1,8 +1,9 @@
 <%-- 
-    Document   : JSP
-    Created on : 14 nov. 2018, 13:23:03
+    Document   : fin
+    Created on : 18 nov. 2018, 14:03:27
     Author     : Matthias
 --%>
+
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ page contentType="text/html" pageEncoding="UTF-8" session="false" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
@@ -13,15 +14,15 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Bienvenue dans notre jeu !</h1>
-	<hr>
-		<h2>${numberConnected} joueurs connectés</h2>
         <hr>
-        
-        <form method="POST">
-		<label>Ton prénom : <input name="playerName"></label>
-		<input name="action" value="Connexion" type="SUBMIT">
-	</form>
+		<h2>${numberConnected} joueurs connectés</h2>
+		<hr>
+
+		<h3>Bravo, tu as gagné !</h3>
+		<form method="POST">
+			<input type="SUBMIT" name="action" value="Déconnexion"/>
+			<input type="SUBMIT" name="action" value="Rejouer"/>
+		</form>
 
     </body>
 </html>
